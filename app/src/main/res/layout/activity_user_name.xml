@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserNameActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name below.."
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:padding="8dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/text_View"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_View"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:gravity="center"
+        android:id="@+id/nameText"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="4dp"
+        android:background= "#e74c3c"
+        android:text="continue"
+        android:textColor="#FFFFFF"
+        android:id="@+id/continueButtonId"
+        android:onClick="continueButton"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
